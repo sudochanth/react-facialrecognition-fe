@@ -9,20 +9,6 @@ import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import './App.css';
 
-// const API_KEY = process.env.REACT_APP_FACEREC_KEY;
-
-
-const particlesOptions = {
-  particles: {
-    number: {
-      value: 30,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    }
-  }
-}
 
 const initialState = {
   input: '',
@@ -126,7 +112,6 @@ class App extends React.Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <Particles className="particles" params={ particlesOptions } />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home' 
           ? <div>

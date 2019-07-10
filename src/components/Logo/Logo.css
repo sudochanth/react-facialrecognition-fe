@@ -1,3 +1,20 @@
 .Tilt {
-  background: linear-gradient(89deg, rgba(248, 145, 48, 0.698) 0%, rgb(160, 215, 241) 100%);
+  background: linear-gradient(89deg, rgba(255, 255, 255, 0.5) 0%, rgb(164, 99, 242) 100%);
+}
+
+.logo-container {
+  position: relative;
+}
+
+.logo-crescent {
+  position: absolute;
+  transform: rotate(120deg);
+  right: 25px;
+  top: 25px;
+}
+
+.s {
+  position: absolute;
+  top: 55px;
+  font-size: 2em;
 }
